@@ -1,10 +1,19 @@
 //Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
 
-let n1 = prompt("Ingrese el numero");
-if (n1 % 2 === 0 || n1 % 3 === 0 || n1 % 5 === 0 || n1 % 7 === 0) {
-document.write("Es divisible por 2, 3, 5 o 7");
-} else {
-document.write("No es divisible ni por 2, ni por 3, ni por 5, ni por 7");
+let num = prompt("Ingrese el numero: ");
+if (num %  2 === 0) {
+    document.write("El " + num + " es divisible por 2.");
 }
-
+else if (n1 % 3 === 0) {
+    document.write("El " + num + " es divisible por 3.");
+}
+else if (n1 % 5 === 0) {
+    document.write("El " + num + " es divisible por 5.");
+}
+else if (n1 % 7 === 0) {
+    document.write("El " + num + " es divisible por 7.");
+}
+else{
+    document.write("El " + num + " es no divisible por 2, 3, 5 ni 7.");
+}
 
